@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="44 — أكل، قهوة، ترفيه ومناسبات. كل اللي بتحبه في مكان واحد.">
+  <title>44 | Fourty Four</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="44">
+      <span class="brand-mark">44</span>
+      <span class="brand-name">FOURTY FOUR</span>
+    </a>
+    <a class="top-whatsapp" href="#contact">تواصل معنا</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-fallback"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">WELCOME TO 44</div>
+        <h1>كل اللي بتحبه<br><span>في مكان واحد.</span></h1>
+        <p>أكل • قهوة • ترفيه • مناسبات</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#experience">اكتشف 44</a>
+          <a class="btn btn-outline" href="#contact">تواصل معنا</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#experience">اسحب لاكتشاف 44 ↓</a>
+    </section>
+
+    <section id="experience" class="section intro">
+      <div class="section-kicker">THE 44 EXPERIENCE</div>
+      <h2>مش مجرد مكان تاكل فيه.</h2>
+      <p>44 معمول عشان تقضي وقتك كله في تجربة واحدة — من أول القهوة والأكل، للّعب، للقعدة، وللاحتفالات.</p>
+      <div class="experience-grid">
+        <article><span>01</span><strong>EAT</strong><p>اختيارات مختلفة للأكل في مكان واحد.</p></article>
+        <article><span>02</span><strong>CHILL</strong><p>قهوة، مشروبات، شيشة وقعدة مريحة.</p></article>
+        <article><span>03</span><strong>PLAY</strong><p>مساحة مخصصة للأطفال والمرح.</p></article>
+        <article><span>04</span><strong>CELEBRATE</strong><p>احتفالات ومناسبات صغيرة بطابع 44.</p></article>
+      </div>
+    </section>
+
+    <section class="section concepts">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">OUR CONCEPTS</div>
+          <h2>اختار مودك.</h2>
+        </div>
+        <p>كل براند له شخصيته… وكلهم جوه 44.</p>
+      </div>
+
+      <div class="concept-list">
+        <article class="concept-card">
+          <div class="concept-number">01</div>
+          <div><h3>BLANC</h3><p>قهوة • مشروبات • شيشة • بيتزا</p></div>
+          <a data-wa="blanc" href="#contact">واتساب ↗</a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-number">02</div>
+          <div><h3>PANZO</h3><p>برجر على مزاجك.</p></div>
+          <a data-wa="panzo" href="#contact">واتساب ↗</a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-number">03</div>
+          <div><h3>WAWASHY</h3><p>الحواوشي بطابع 44.</p></div>
+          <a data-wa="wawashy" href="#contact">واتساب ↗</a>
+        </article>
+        <article class="concept-card">
+          <div class="concept-number">04</div>
+          <div><h3>LAFFA W SEEKH</h3><p>شاورما • لفة • سيخ.</p></div>
+          <a data-wa="laffa" href="#contact">واتساب ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="visual-break">
+      <div class="visual-placeholder">
+        <div>
+          <span>44</span>
+          <p>YOUR NIGHT STARTS HERE.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="split-copy">
+        <div class="section-kicker">PLAY</div>
+        <h2>وقت اللعب<br>له مكانه.</h2>
+        <p>مساحة الأطفال جزء أساسي من تجربة 44 — عشان الكبار يستمتعوا والصغيرين يعيشوا وقتهم.</p>
+        <a class="text-link" data-wa="kids" href="#contact">اسأل عن Kids Area ↗</a>
+      </div>
+      <div class="split-card kids-card"><span>KIDS<br>AREA</span></div>
+    </section>
+
+    <section class="section events">
+      <div class="events-card">
+        <div>
+          <div class="section-kicker">44 EVENTS</div>
+          <h2>احتفالك<br>بطريقة 44.</h2>
+          <p>أعياد ميلاد، تخرج، خطوبة صغيرة، تجمعات عائلية ومناسبات خاصة.</p>
+        </div>
+        <a class="btn btn-light" href="#event-form">احجز استفسارك</a>
+      </div>
+
+      <form id="event-form" class="event-form" onsubmit="return submitEvent(event)">
+        <h3>خلّي فريق 44 يتواصل معاك</h3>
+        <div class="form-grid">
+          <label>الاسم<input id="name" required></label>
+          <label>واتساب<input id="phone" inputmode="tel" required></label>
+          <label>نوع المناسبة
+            <select id="eventType">
+              <option>عيد ميلاد</option>
+              <option>تخرج</option>
+              <option>خطوبة صغيرة</option>
+              <option>تجمع عائلي</option>
+              <option>مناسبة خاصة</option>
+            </select>
+          </label>
+          <label>عدد الضيوف<input id="guests" type="number" min="1"></label>
+          <label>التاريخ<input id="date" type="date"></label>
+          <label>الوقت<input id="time" type="time"></label>
+        </div>
+        <label>ملاحظات<textarea id="notes" rows="3"></textarea></label>
+        <button class="btn btn-dark" type="submit">إرسال الطلب على واتساب</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <div class="section-kicker">COME TO 44</div>
+        <h2>مستنيينك.</h2>
+        <p>الأرقام وروابط السوشيال يتم وضعها هنا قبل الإطلاق النهائي.</p>
+      </div>
+      <div class="contact-list">
+        <a data-wa="general" href="#contact"><span>44</span> واتساب عام ↗</a>
+        <a href="#" aria-label="Instagram">Instagram ↗</a>
+        <a href="#" aria-label="Facebook">Facebook ↗</a>
+        <a href="#" aria-label="Google Maps">Location ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>44 — FOURTY FOUR</span>
+    <span>EAT • CHILL • PLAY • CELEBRATE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
